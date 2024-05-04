@@ -1,0 +1,159 @@
+.hover-bg-opacity:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    /* Change opacity here */
+    border-radius: 8px;
+  }
+  
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .dd-button {
+    display: inline-block;
+    border: 1px solid #E4E6ED;
+    border-radius: 20px;
+    padding: 7px 30px 7px 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .dd-buttonfx {
+    display: inline-block;
+    border: 2px solid #E4E6ED;
+    border-radius: 9px;
+    padding: 7px 30px 7px 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .dd-button:after, .dd-buttonfx:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+  }
+  
+  .dd-buttonz {
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .dd-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
+  .dd-input {
+    display: none;
+  }
+  
+  .dd-menu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #E4E6ED;
+    border-radius: 4px;
+    padding: 0;
+    margin: 2px 0 0 0 ;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    list-style-type: none;  /* Existing styles */
+    display: none;
+    /* Additional styles */
+    /* Add transitions for smooth motion */
+    transition: display 0.3s ease;
+  
+  }
+  
+  .dd-input+.dd-menu {
+    display: none;
+  }
+  
+  .dd-input:checked+.dd-menu {
+    display: block;
+  }
+  
+  .dd-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    color: black;
+  }
+  
+  .dd-menu li:hover {
+    background-color: #eef9ff;
+  }
+  
+  .dd-menu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+  }
+  
+  .dd-menu li.divider {
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+  }
+  .dropdown:focus-within .dd-menu {
+    display: block;
+    z-index: 1000;
+  }
+  
+  /* Hide checkbox */
+  .dd-input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  
+  #last{
+  transform: translateX(-120px);
+  }
+  #lasti{
+    transform: translateX(-60px);
+    }
+  /* Close dropdown when focus leaves */
+  .dropdown:focus-within .dd-input:checked + .dd-menu {
+    display: none;
+  }
+  
+  #des{
+    color: white !important;
+  }
+  
+  #desc{
+    color: #ffffff;
+  }
+  
+  #desi{
+   border: 2px solid "#DADCF6";
+   transform: translate(-60px);
+  }
+  
+  
+  
+  .icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px; /* Adjust button padding */
+    background-color: white; /* Button background color */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .icon-button:hover {
+    background-color: #efefef; /* Button background color on hover */
+  }
+  
+  
+  

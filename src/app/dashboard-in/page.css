@@ -1,0 +1,6 @@
+#fix{
+    font-size: 10px;
+}
+input[type="text"]:focus {
+    color: blue;
+  }

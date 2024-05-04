@@ -1,0 +1,15 @@
+@media screen and (max-width:900px) and (min-width: 10px){
+    .desktop{
+        display: none;
+    }
+};
+
+@media screen and (max-width: 9000px) and (min-width: 900px)  {
+    .mobile{
+        display: none;
+    }
+}
+
+.desktop{
+    background-color: blue;
+}
